@@ -42,6 +42,20 @@ An EAV is very useful for when you need system managers (who may not be programm
 Or when significant time could be saved by allowing the data to give itself shape, rather than deploying database and code changes 
 to update properteis of stored items
 
+### Terminology
+Not everything is as it seems, because I like my naming to be different, this EAV names things slightly different
+- Entity
+- Attribute
+- EntityAttribute
+- Item
+- ItemAttribute
+
+Entity and Attribute are self-describing, EntitiyAttribute is the "link" that puts that attribute on all Items that are of Entity (as an Entity is like a Type)
+
+Item is the link between concrete data and Entity (it's data type if you will)
+
+ItemAttribute is the Value that an Item _has_ and an Attribute _describes_
+
 ## Limitations
 Due to Go's generic system, a programmer must in advance decide what type a generic must be before attempting to use it
 
