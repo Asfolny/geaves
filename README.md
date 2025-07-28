@@ -1,6 +1,9 @@
 # geaves
 An zero dependency sqlite eav library for Go
 
+## Requirements
+- Go 1.24.5+
+
 ## Usage
 ### CLI
 For demonstration purposes an (almost*) zero dependencies is provided under geaves-cli, this tool is meant to be used for 
