@@ -1,8 +1,6 @@
 module github.com/Asfolny/geaves/geaves-cli
 
-go 1.24
-
-toolchain go1.24.5
+go 1.24.5
 
 replace github.com/Asfolny/geaves => ../
 
