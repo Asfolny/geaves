@@ -14,6 +14,8 @@ the EAV library, along with printing it's final state
 
 After installation, `geaves-cli` contains comprehensive `help` commands, simply run `./geaves-cli help` to find out how to use the program
 
+Once you have `geaves-cli`, you will need to set an environment variable `GEAVE_CONNECTION` which contains the connection to open sqlite on
+
 #### Installation
 Currently using git itself is currently the easiest installation method, this will change in the future
 ```bash
@@ -34,6 +36,11 @@ $ ./seed.sh
 `seed.sh` will also build geaves-cli into a binary called `geaves`
 
 ### geaves
+To use `geaves` you must set up an sqlite database for it to be used on,
+`geaves-cli` provides a handy command to generate the needed SQL, this has not been adopted to other ways of using a DB except raw sql and goose
+
+The easiest way to get set up with the table, even on an existing database, is to simply run `geaves-cli generate | sqlite <database>`, (see geaves-cli/seed.sh for the full example)
+
 geaves itself is a library has to be integrated into another system to shine, geaves-cli is an excellent example of how to do this
 
 ## Rationale
