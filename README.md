@@ -17,7 +17,7 @@ After installation, `geaves-cli` contains comprehensive `help` commands, simply 
 Once you have `geaves-cli`, you will need to set an environment variable `GEAVE_CONNECTION` which contains the connection to open sqlite on
 
 #### Installation
-Currently using git itself is currently the easiest installation method, this will change in the future
+Using git is currently the easiest installation method, this will change in the future
 ```bash
 $ git clone https://github.com/Asfolny/geaves.git
 $ cd geaves/geaves-cli
