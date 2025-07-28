@@ -1,4 +1,8 @@
+#!/bin/sh
 go build -o geaves ./...
+
+export GEAVES_CONNECTION="$(pwd)/test.sql"
+./geaves generate | sqlite3 $GEAVES_CONNECTION
 
 ./geaves entity create --name="Test" --slug=test
 
@@ -68,3 +72,8 @@ go build -o geaves ./...
 ./geaves item add 1 date "2025-01-01"
 ./geaves item add 1 time "01:02:03"
 ./geaves item add 1 datetime "2025-01-01 11:02:03"
+
+./geaves entity list
+./geaves entity info test
+./geaves attribute list -e
+./geaves item info 1
