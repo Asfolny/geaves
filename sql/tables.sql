@@ -27,7 +27,7 @@ CREATE TABLE attributes (
         'rune',
         'float32',
         'float64',
-        'blog',
+        'blob',
         'date',
         'time',
         'datetime'
@@ -54,4 +54,3 @@ CREATE TABLE item_attribute (
 
     PRIMARY KEY (item_id, attribute_id)
 );
-
