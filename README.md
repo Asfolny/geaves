@@ -1,4 +1,4 @@
-# Geaves
+# geaves
 An zero dependency sqlite eav library for Go
 
 ## Usage
