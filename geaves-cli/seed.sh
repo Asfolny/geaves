@@ -1,8 +1,9 @@
 #!/bin/sh
 go build -o geaves ./...
 
-export GEAVES_CONNECTION="$(pwd)/test.sql"
-./geaves generate | sqlite3 $GEAVES_CONNECTION
+table="$(pwd)/test.sql"
+export GEAVES_CONNECTION="$table?_pragma=foreign_keys(1)"
+./geaves generate | sqlite3 $table
 
 ./geaves entity create --name="Test" --slug=test
 
