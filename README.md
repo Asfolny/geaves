@@ -12,18 +12,20 @@ CLI administration of the EAV once set up in a database
 For further demo showcase, a geaves-cli/seed.sh is provided which will set up and run commands on it's own to provide an example usecase of 
 the EAV library, along with printing it's final state
 
+After installation, `geaves-cli` contains comprehensive `help` commands, simply run `./geaves-cli help` to find out how to use the program
+
 #### Installation
 Currently using git itself is currently the easiest installation method, this will change in the future
 ```bash
 $ git clone https://github.com/Asfolny/geaves.git
-$ cd geaves
+$ cd geaves/geaves-cli
+$ go build -o geaves ./...
 ```
 
 #### seed.sh
 It is worth nothing that `seed.sh` will not exit on error
 `seed.sh` is entirely self-contained and can just be run on it's own
 ```bash
-$ cd geaves-cli
 $ ./seed.sh
 ```
 
